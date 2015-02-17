@@ -4,13 +4,12 @@
  * https://github.com/gdibble/backbone-ajaxretry
  * Copyright 2014 Gabriel Dibble; Licensed MIT
  */
-(function (define) { define(function (require, exports, module) { //'use strict';
+(function () {
+  //'use strict';
 
 
 var _, Backbone, _$ajax, settings;
 
-_        = require('underscore');
-Backbone = require('backbone');
 settings = { //Defaults that can be overridden via set
   base:         2.718281828,
   y:            0.25,
@@ -119,4 +118,4 @@ if (!settings.onlyBackbone) {
 module.exports = { set: setOptions };
 
 
-}); }(typeof define === 'function' && define.amd ? define : function (factory) { factory(require, exports, module); })); //end UMD CommonJS wrapper
+})();
