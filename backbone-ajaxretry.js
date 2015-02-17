@@ -8,7 +8,7 @@
   //'use strict';
 
 
-var _, Backbone, _$ajax, settings;
+var _$ajax, settings;
 
 settings = { //Defaults that can be overridden via set
   base:         2.718281828,
@@ -113,9 +113,6 @@ if (!settings.onlyBackbone) {
     return Backbone.$.ajax.apply(Backbone.$, args);
   };
 }
-
-
-module.exports = { set: setOptions };
 
 
 })();
